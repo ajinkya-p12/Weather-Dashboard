@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Weather Forecast</h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter a City Name</h3>
+            <input id="cityInput" class="city-input" type="text" placeholder="E.g., New York,London, Tokyo">
+            <button id="searchBtn" class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button id="locationBtn" class="location-btn">Use Current Location</button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2 id="cityName">Weather Details</h2>
+                    <h4 id="temperature">Temperature: _____°C</h4>
+                    <h4 id="windSpeed">Wind: _____ M/S</h4>
+                    <h4 id="humidity">Humidity: ______%</h4>
+                </div>
+                <div class="icon">
+                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                    <h4 id="current-condition">Moderate rain</h4>
+                </div>
+            </div>
+            <div class="days-forecast">
+                <h2>Popular cities</h2>
+                <ul class="weather-cards">
+                    <li id ="London" class="card">
+                        <h2>London</h2>
+                        <h4 id="temperature1">Unable to fetch data</h4>
+                        <h4 id="windSpeed1"></h4>
+                        <h4 id="humidity1"></h4>
+                    </li>
+                    <li id="Paris" class="card">
+                        <h2>Paris</h2>
+                        <h4 id="temperature1">Unable to fetch data</h4>
+                        <h4 id="windSpeed1"></h4>
+                        <h4 id="humidity1"></h4>
+                    </li>
+                    <li id="Tokyo" class="card">
+                        <h2>Tokyo</h2>
+                        <h4 id="temperature1">Unable to fetch data</h4>
+                        <h4 id="windSpeed1"></h4>
+                        <h4 id="humidity1"></h4>
+                    </li>
+                    <li id="Washington" class="card">
+                        <h2>Washington DC</h2>
+                        <h4 id="temperature1">Unable to fetch data</h4>
+                        <h4 id="windSpeed1"></h4>
+                        <h4 id="humidity1"></h4>
+                    </li>
+                    <li id="Dubai" class="card">
+                        <h2>Dubai</h2>
+                        <h4 id="temperature1">Unable to fetch data</h4>
+                        <h4 id="windSpeed1"></h4>
+                        <h4 id="humidity1"></h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
